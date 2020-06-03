@@ -24,7 +24,7 @@
 
 TEST_SUITE_BEGIN("file");
 
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 namespace
 {
@@ -60,14 +60,14 @@ namespace
 			fs::remove_all(m_path);
 		}
 
-		const std::experimental::filesystem::path& temp_dir()
+		const std::filesystem::path& temp_dir()
 		{
 			return m_path;
 		}
 
 	private:
 
-		std::experimental::filesystem::path m_path;
+		std::filesystem::path m_path;
 
 	};
 
